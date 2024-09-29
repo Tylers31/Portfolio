@@ -48,6 +48,7 @@
         /* Navigation Bar */
         nav {
             display: flex;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
             justify-content: center;
             background-color: #34495e;
             padding: 10px;
@@ -58,8 +59,8 @@
 
         nav a {
             color: white;
-            margin: 0 20px;
-            padding: 10px 20px;
+            margin: 0 10px; /* Reduced margin */
+            padding: 10px 15px; /* Reduced padding */
             font-size: 1rem;
             font-weight: bold;
             text-transform: uppercase;
@@ -162,16 +163,29 @@
         /* Media Queries */
         @media (max-width: 600px) {
             header h1 {
-                font-size: 2.2rem;
+                font-size: 2.5rem; /* Reduced font size for header */
+            }
+
+            header p {
+                font-size: 1rem; /* Reduced font size for paragraph */
             }
 
             nav a {
                 font-size: 0.9rem;
-                margin: 0 10px;
+                margin: 5px; /* Reduced margin */
+                padding: 8px 10px; /* Reduced padding */
             }
 
             h2 {
-                font-size: 2rem;
+                font-size: 2rem; /* Reduced font size for headings */
+            }
+
+            p {
+                font-size: 1rem; /* Reduced font size for paragraphs */
+            }
+
+            section {
+                margin: 20px; /* Reduced margin for sections */
             }
         }
     </style>
@@ -192,7 +206,7 @@
 
 <section id="about">
     <h2>About Me</h2>
-    <p>Hey there! I'm a developer with a skill set across multiple languages such as Java, Lua, Python, and C++. I'm also very experienced in web development aswell! I enjoy bringing innovative ideas to life through efficient code.</p>
+    <p>Hey there! I'm a developer with a skill set across multiple languages such as Java, Lua, Python, and C++. I'm also very experienced in web development as well! I enjoy bringing innovative ideas to life through efficient code.</p>
 </section>
 
 <section id="projects">
@@ -211,7 +225,7 @@
         <div class="grid-item">
             <h3>The Project</h3>
             <p>This was an older project that I led development on. It was a high-quality recreation of The Backrooms in Roblox. It was an innovative game, however it never officially released due to the owner having a lack of motivation for it.</p>
-            <p><em>Visit Count: 2,500 </em></p>
+            <p><em>Visit Count: 2,500</em></p>
         </div>
         <div class="grid-item">
             <h3>Can't Sleep?</h3>
@@ -219,8 +233,8 @@
             <p><em>Visit Count: N/A</em></p>
         </div>
         <div class="grid-item">
-            <h3>Anonymous Expidition</h3>
-            <p>Anonymous Expidition was another horror game that I led development on. The game released and did alright, but it never ended up blowing up and having a large playerbase.</p>
+            <h3>Anonymous Expedition</h3>
+            <p>Anonymous Expedition was another horror game that I led development on. The game released and did alright, but it never ended up blowing up and having a large player base.</p>
             <p><em>Visit Count: 5,000+</em></p>
         </div>
         <div class="grid-item">
@@ -231,7 +245,6 @@
     </div>
 </section>
 
-
 <section id="skills">
     <h2>Skills</h2>
     <div class="grid-container">
@@ -241,50 +254,35 @@
         </div>
         <div class="grid-item">
             <h3>JavaScript</h3>
-            <p>Expert in building dynamic and interactive web applications.</p>
+            <p>Skilled in adding interactivity and dynamic elements to websites.</p>
         </div>
         <div class="grid-item">
-            <h3>Backend Development</h3>
-            <p>Experienced with Node.js, Python, and other backend technologies.</p>
+            <h3>Java</h3>
+            <p>Experienced in back-end development and creating APIs.</p>
         </div>
         <div class="grid-item">
-            <h3>Databases</h3>
-            <p>Skilled in using MongoDB, SQL, and Redis for data management and optimization.</p>
+            <h3>Lua</h3>
+            <p>Familiar with scripting for games, especially in Roblox.</p>
         </div>
         <div class="grid-item">
-            <h3>Networking Library Usage</h3>
-            <p>Experienced in using ByteNet and other Roblox networking libraries to create efficient, scalable communication between game clients and servers.</p>
+            <h3>Python</h3>
+            <p>Knowledgeable in Python for data manipulation and automation.</p>
         </div>
         <div class="grid-item">
-            <h3>Object Oriented Programming</h3>
-            <p>Experienced in designing and implementing OOP principles in Java, Lua, and C++.</p>
+            <h3>C++</h3>
+            <p>Basic understanding of C++ for system programming and game development.</p>
         </div>
     </div>
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p>If you're interested in working together, feel free to reach out to me!</p>
-    <p>Discord: kasuki_ovo</p>
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out via email: <a href="mailto:example@example.com">example@example.com</a></p>
 </section>
 
 <footer>
-    <p>&copy; 2024 Kasuki Development. All Rights Reserved.</p>
+    <p>&copy; 2024 Kasuki Development. All rights reserved.</p>
 </footer>
-
-<script>
-    // Smooth scroll for anchor links
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute('href').substring(1);
-            document.getElementById(targetId).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-</script>
 
 </body>
 </html>
