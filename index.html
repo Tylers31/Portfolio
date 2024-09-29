@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kasuki Development - Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 25px;
+            transition: all 0.3s ease; /* For smooth hover transition */
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            color: white;
+            transform: translateY(-3px); /* Slight lift effect */
+        }
+
+        /* Section Styling */
+        section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ecf0f1;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        /* Projects & Skills Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .grid-item p {
+            color: #7f8c8d;
+            font-size: 1rem;
+        }
+
+        /* Contact Section */
+        #contact p {
+            font-size: 1.1rem;
+        }
+
+        #contact a {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                margin: 0 10px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kasuki Development</h1>
+    <p>Fullstack Web Developer | Software Engineer</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hey there! I'm a developer with a skill set across multiple languages such as Java, Lua, Python, and C++. I'm also very experienced in web development aswell! I enjoy bringing innovative ideas to life through efficient code.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Find the Simpsons</h3>
+            <p>On this project, I was a developer for a few of their updates that the owner pushed. I helped out with various different tasks, including: Bug fixes, programming new content, and reprogramming previous code.</p>
+            <p><em>Visit Count: 100m+</em></p>
+        </div>
+        <div class="grid-item">
+            <h3>RNG Tycoon</h3>
+            <p>This project was a Tycoon-Type game with the implementation of the popular RNG logic. The game did alright, but the player count has died down a lot since it peaked.</p>
+            <p><em>Visit Count: 35,000+</em></p>
+        </div>
+        <div class="grid-item">
+            <h3>The Project</h3>
+            <p>This was an older project that I led development on. It was a high-quality recreation of The Backrooms in Roblox. It was an innovative game, however it never officially released due to the owner having a lack of motivation for it.</p>
+            <p><em>Visit Count: 2,500 </em></p>
+        </div>
+        <div class="grid-item">
+            <h3>Can't Sleep?</h3>
+            <p>Can't Sleep was a side project I was working on about a year ago, which I never ended up fully completing. It was a realistic horror game about sleep paralysis.</p>
+            <p><em>Visit Count: N/A</em></p>
+        </div>
+        <div class="grid-item">
+            <h3>Anonymous Expidition</h3>
+            <p>Anonymous Expidition was another horror game that I led development on. The game released and did alright, but it never ended up blowing up and having a large playerbase.</p>
+            <p><em>Visit Count: 5,000+</em></p>
+        </div>
+        <div class="grid-item">
+            <h3>Weapons+</h3>
+            <p>Weapons+ is a weapon system that I programmed from the ground up. It includes guns, melee weapons, and some custom abilities. I released it, however I do not maintain it anymore.</p>
+            <p><em>Purchases: 100+</em></p>
+        </div>
+    </div>
+</section>
+
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>HTML & CSS</h3>
+            <p>Proficient in creating modern, responsive web designs.</p>
+        </div>
+        <div class="grid-item">
+            <h3>JavaScript</h3>
+            <p>Expert in building dynamic and interactive web applications.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Backend Development</h3>
+            <p>Experienced with Node.js, Python, and other backend technologies.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Databases</h3>
+            <p>Skilled in using MongoDB, SQL, and Redis for data management and optimization.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Networking Library Usage</h3>
+            <p>Experienced in using ByteNet and other Roblox networking libraries to create efficient, scalable communication between game clients and servers.</p>
+        </div>
+        <div class="grid-item">
+            <h3>Object Oriented Programming</h3>
+            <p>Experienced in designing and implementing OOP principles in Java, Lua, and C++.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you're interested in working together, feel free to reach out to me!</p>
+    <p>Discord: kasuki_ovo</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Kasuki Development. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            document.getElementById(targetId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
